@@ -1,2 +1,3 @@
 
-hi hih ihi hih ih ihi 
+if __name__ == '__main__':
+	print('hello')
