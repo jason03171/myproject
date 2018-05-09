@@ -1,5 +1,5 @@
 .data
-	newline: .asciiz   "\n¡§
+	newline: .asciiz   "\nÄ„Â§
 .text	
 	li $v0,5                # num1    
   	syscall
@@ -16,10 +16,18 @@
    	move $a0,$t0
    	syscall 
    	
+
+	 		li $v0,1
+   	move $a0,$t1
+   	syscall 
+
+
    	la $a0,newline        
         li $v0,4
        	syscall
    	
-   	li $v0,1
+
+li $v0,1
    	move $a0,$t1
    	syscall 
+   
