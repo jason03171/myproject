@@ -16,10 +16,12 @@
    	move $a0,$t0
    	syscall 
    	
+	 	li $v0,1
+   	move $a0,$t1
+   	syscall 
+
    	la $a0,newline        
         li $v0,4
        	syscall
    	
-   	li $v0,1
-   	move $a0,$t1
-   	syscall 
+  
